@@ -1,0 +1,1 @@
+package mohu.animation {	public function wait(frames:int, onComplete:Function = null, onEnterFrame:Function = null):Delay {		var delay:Delay = new Delay(frames);		if (onComplete != null) delay.onComplete.addListener(onComplete);		if (onEnterFrame != null) delay.onEnterFrame.addListener(onEnterFrame);		Animator.add(delay);		return delay;	}}

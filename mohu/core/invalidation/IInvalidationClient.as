@@ -1,0 +1,1 @@
+package mohu.core.invalidation {	public interface IInvalidationClient {		function forceImmediateUpdate():void;						function invalidate():void;						function get isInvalid():Boolean	}}
